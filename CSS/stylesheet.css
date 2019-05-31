@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.paint{
+    display: flex;
+    border: 1px solid black;
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Sidebar Section*/
+.paint.sidebar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.colors{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+/*Main Section*/
+.main{
+    width: 80%;
+}
+
+.canvas{
+    border: 5px dotted green;
+    height: 500px;
+    width: 500px;
+}
+
+/*colors*/
+.black{
+    background-color: black;
+    height:5px;
+    width: 5px;
+    position: absolute;
+}
