@@ -25,13 +25,40 @@ body{
     justify-content: flex-start;
 }
 
-
-.colors{
+.colors-btn{
     border: 1px solid black;
     height: 50px;
     width: 50px;
     border-radius: 50%;
     margin: 0px 10px;
+}
+
+#red{
+    background-color: crimson;
+}
+
+#orange{
+    background-color: rgb(228, 154, 42);
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#green{
+    background-color: green;
+}
+
+#blue{
+    background-color: royalblue;
+}
+
+#violet{
+    background-color: blueviolet;
+}
+
+#black{
+    background-color: black;
 }
 
 /*Main Section*/
@@ -45,7 +72,50 @@ body{
     width: 500px;
 }
 
-/*colors*/
+/*colors for drawing*/
+
+.red{
+    background-color: crimson;
+    height:5px;
+    width: 5px;
+    position: absolute;
+}
+
+.orange{
+    background-color: rgb(228, 154, 42);
+    height:5px;
+    width: 5px;
+    position: absolute;
+}
+
+.yellow{
+    background-color: yellow;
+    height:5px;
+    width: 5px;
+    position: absolute;
+}
+
+.green{
+    background-color: green;
+    height:5px;
+    width: 5px;
+    position: absolute;
+}
+
+.blue{
+    background-color: royalblue;
+    height:5px;
+    width: 5px;
+    position: absolute;
+}
+
+.violet{
+    background-color: blueviolet;
+    height:5px;
+    width: 5px;
+    position: absolute;
+}
+
 .black{
     background-color: black;
     height:5px;
