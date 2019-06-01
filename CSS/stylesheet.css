@@ -61,6 +61,10 @@ body{
     background-color: black;
 }
 
+#white{
+    font-size: 25px;
+}
+
 /*Main Section*/
 .main{
     width: 80%;
@@ -121,4 +125,11 @@ body{
     height:5px;
     width: 5px;
     position: absolute;
+}
+
+.white{
+    background-color: white;
+    height:5px;
+    width: 5px;
+    position: absolute; 
 }
