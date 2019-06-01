@@ -4,12 +4,10 @@ body{
 
 .wrapper{
     display: flex;
-    width: 100%;
 }
 
 .paint{
     display: flex;
-    border: 1px solid black;
     height: 100vh;
     box-sizing: border-box;
     align-items: center;
@@ -63,8 +61,12 @@ body{
     background-color: black;
 }
 
-#white, #regular, #large, #extra-large{
+#white, #regular, #large, #extra-large, #clear-screen{
     font-size: 25px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 35px 14px rgba(224,105,13,1);
 }
 
 /*Main Section*/
@@ -73,6 +75,7 @@ body{
     background-image: url(https://www.nicepng.com/png/detail/12-127169_bob-ross-transparent-happy-little-accidents-the-wit.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: -5px;
     overflow: scroll;
 }
 
