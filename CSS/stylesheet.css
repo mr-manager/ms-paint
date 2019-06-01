@@ -12,7 +12,6 @@ body{
     border: 1px solid black;
     height: 100vh;
     box-sizing: border-box;
-    justify-content: center;
     align-items: center;
 }
 
@@ -25,6 +24,7 @@ body{
     justify-content: space-around;
     overflow: scroll;
     margin: 0px;
+    background-image: url(https://i.pinimg.com/originals/2f/8f/85/2f8f85ed75e06200c4510778285d1e0e.jpg);
 }
 
 .colors-btn, .brushsize-btn{
@@ -66,19 +66,17 @@ body{
 #white, #regular, #large, #extra-large{
     font-size: 25px;
 }
+
 /*Main Section*/
 .main{
     width: 80%;
-}
-
-.canvas{
-    border: 5px dotted green;
-    height: 500px;
-    width: 500px;
+    background-image: url(https://www.nicepng.com/png/detail/12-127169_bob-ross-transparent-happy-little-accidents-the-wit.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: scroll;
 }
 
 /*colors for drawing*/
-
 .red{
     background-color: crimson;
     position: absolute;
@@ -115,6 +113,6 @@ body{
 }
 
 .white{
-    background-color: white;
+    background-color:	#F6F6F6;
     position: absolute; 
 }
