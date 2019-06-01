@@ -21,16 +21,18 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 20%;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: scroll;
+    margin: 0px;
 }
 
-.colors-btn{
+.colors-btn, .brushsize-btn{
     border: 1px solid black;
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    margin: 0px 10px;
+    margin: 0px 5px;
 }
 
 #red{
@@ -61,10 +63,9 @@ body{
     background-color: black;
 }
 
-#white{
+#white, #regular, #large, #extra-large{
     font-size: 25px;
 }
-
 /*Main Section*/
 .main{
     width: 80%;
@@ -80,56 +81,40 @@ body{
 
 .red{
     background-color: crimson;
-    height:5px;
-    width: 5px;
     position: absolute;
 }
 
 .orange{
     background-color: rgb(228, 154, 42);
-    height:5px;
-    width: 5px;
     position: absolute;
 }
 
 .yellow{
     background-color: yellow;
-    height:5px;
-    width: 5px;
     position: absolute;
 }
 
 .green{
     background-color: green;
-    height:5px;
-    width: 5px;
     position: absolute;
 }
 
 .blue{
     background-color: royalblue;
-    height:5px;
-    width: 5px;
     position: absolute;
 }
 
 .violet{
     background-color: blueviolet;
-    height:5px;
-    width: 5px;
     position: absolute;
 }
 
 .black{
     background-color: black;
-    height:5px;
-    width: 5px;
     position: absolute;
 }
 
 .white{
     background-color: white;
-    height:5px;
-    width: 5px;
     position: absolute; 
 }
