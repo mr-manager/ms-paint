@@ -26,6 +26,15 @@ for (var i = 0; i < brushSizeButtons.length; i++) {
     })
 };
 
+var clearScreenButton = document.getElementById("clear-screen");
+clearScreenButton.addEventListener("click", clearTheScreen);
+function clearTheScreen() {
+    var drawing = document.getElementsByClassName("drawn");
+    while (drawing.length > 0) {
+        canvas.removeChild(drawing[0]);
+    }
+};
+
 canvas.addEventListener("mousedown", function () {
     isDrawing = true;
     keepDrawing();
@@ -41,11 +50,6 @@ canvas.addEventListener("mouseup", function () {
 
 function draw(e) {
     if (isDrawing === true) {
-        /*var x = e.clientX;
-        var y = e.clientY;
-        var coordinates = `X coordinates are ${x} and Y coordinates are ${y}`
-        console.log(coordinates);*/
-
         var appendDiv = document.createElement("div");
         appendDiv.classList = colorInUse;
         appendDiv.style = brushSizeInUse;
@@ -56,11 +60,3 @@ function draw(e) {
     }
 };
 
-var clearScreenButton = document.getElementById("clear-screen");
-clearScreenButton.addEventListener("click", clearTheScreen);
-function clearTheScreen() {
-    var drawing = document.getElementsByClassName("drawn");
-    while (drawing.length > 0) {
-        canvas.removeChild(drawing[0]);
-    }
-};

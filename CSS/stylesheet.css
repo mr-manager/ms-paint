@@ -76,7 +76,6 @@ button:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -5px;
-    overflow: scroll;
 }
 
 /*colors for drawing*/
