@@ -1,4 +1,10 @@
-from bottle import run, route, static_file
+from bottle import run, route, static_file, debug
+import os
+from sys import argv
+
+DEBUG = os.environ.get("DEBUG")
+
+debug(True)
 
 @route('/')
 def index():
@@ -12,5 +18,7 @@ def stylesheet(filename):
 def stylesheet(filename):
     return static_file(filename, root='JS')
 
-if __name__ == "__main__":
+if DEBUG:
     run(host='localhost', port=7000)
+else:
+    run(host='0.0.0.0', port=argv[1])
